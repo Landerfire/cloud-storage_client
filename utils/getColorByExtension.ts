@@ -1,0 +1,28 @@
+const extColor = {
+  pdf: 'purple',
+  xls: 'green',
+  doc: 'blue',
+  txt: 'blue',
+  png: 'orange',
+  jpg: 'orange',
+  jpeg: 'orange',
+  zip: 'red',
+} as const;
+
+export enum ColorsEnum {
+  pdf = 'purple',
+  xls = 'green',
+  doc = 'blue',
+  txt = 'blue',
+  png = 'orange',
+  jpg = 'orange',
+  jpeg = 'orange',
+  zip = 'red',
+}
+
+export type Extension = keyof typeof extColor;
+export type Color = (typeof extColor)[Extension];
+
+export const getColorByExtension = (ext: Extension): Color => {
+  return extColor[ext];
+};

@@ -1,3 +1,5 @@
+Cloud Storage Learning Project with [NextJS](https://nextjs.org/) framework and TypeScript. This is a client part. For server code you can find [Here](https://github.com/Landerfire/cloud-storage_nest-server).
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
